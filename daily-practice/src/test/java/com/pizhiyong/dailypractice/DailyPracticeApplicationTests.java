@@ -1,13 +1,24 @@
 package com.pizhiyong.dailypractice;
 
-import org.junit.jupiter.api.Test;
+import com.pizhiyong.dailypractice.util.RandomUtils;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @SpringBootTest
-class DailyPracticeApplicationTests {
+public class DailyPracticeApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < 1000; i++) {
+            String s = RandomUtils.genDspId("1");
+            System.out.println(s);
+            set.add(s);
+        }
+        System.out.println(set.size() == 1000);
     }
 
 }

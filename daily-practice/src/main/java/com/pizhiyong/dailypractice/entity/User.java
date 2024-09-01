@@ -94,6 +94,10 @@ public class User implements Serializable {
 
     public User() {}
 
+    public static User of(Integer id, String name, Integer age, String sex) {
+        return new User(id, name, age, sex);
+    }
+
     public static User defaultUser() {
         return new User();
     }

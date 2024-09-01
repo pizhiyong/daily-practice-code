@@ -2,6 +2,8 @@ package com.pizhiyong.dailypractice.dao;
 
 import com.pizhiyong.dailypractice.entity.User;
 
+import java.util.List;
+
 /**
 * @author pizhiyong
 * @description 针对表【user】的数据库操作Mapper
@@ -21,5 +23,7 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    List<User> selectAll();
 
 }

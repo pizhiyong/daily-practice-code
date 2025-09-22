@@ -129,16 +129,16 @@ public class DesensitizeUtil {
      * @param encryptEnum
      * @return
      */
-    public static String desensitize(String str, SensitiveMaskFieldType encryptEnum) {
-        return switch (encryptEnum) {
-            case ID_CARD -> idCard(str);
-            case BANK_CARD -> bankCard(str);
-            case ADDRESS -> address(str);
-            case PHONE -> phone(str);
-            case EMAIL -> email(str);
-            case NAME -> userName(str);
-        };
-
-    }
+//    public static String desensitize(String str, SensitiveMaskFieldType encryptEnum) {
+//        return switch (encryptEnum) {
+//            case ID_CARD -> idCard(str);
+//            case BANK_CARD -> bankCard(str);
+//            case ADDRESS -> address(str);
+//            case PHONE -> phone(str);
+//            case EMAIL -> email(str);
+//            case NAME -> userName(str);
+//        };
+//
+//    }
 
 }
